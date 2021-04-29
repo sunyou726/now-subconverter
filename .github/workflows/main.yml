@@ -29,10 +29,10 @@ jobs:
         sudo chmod +x subconverter/subconverter.exe
     - name: Modify pref.ini
       run: |
-        sudo cp -rf files/* subconverter/
+        sudo cp -rf files/pref.ini subconverter/
     - name: Modify GeneralClashConfig.yml
       run: |
-        sudo cp -rf files/* subconverter/base/
+        sudo cp -rf files/GeneralClashConfig.yml subconverter/base/
     - name: Add & Commit
       uses: EndBug/add-and-commit@v6
       with:
