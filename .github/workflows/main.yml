@@ -34,7 +34,7 @@ on:
       branch:
         description: 'update subconverter from where?(action/build/release)'
         required: false
-        default: 'action'
+        default: 'build'
       tag:
         description: 'specific version tag if branch is "release"'
         required: false
@@ -42,7 +42,7 @@ on:
       modify_method:
         description: 'modify configuration file by sed or /files'
         required: false
-        default: 'sed'
+        default: 'files'
 
 concurrency: 
   group: subconverter
