@@ -6,14 +6,14 @@ env:
   # release 从release中下载稳定版，可用下面的tag参数指定版本
   # build 拉取最新代码自行编译
   # action 从最新commit所关联github action处下载
-  branch: 'release'
+  branch: 'build'
   # 当branch参数设置为release时，下载指定版本的release
   # 设置为latest时，自动选择最新版本release
   tag: 'latest'
   # 自定义配置文件的方法
   # sed 在Modify pref.ini by sed步骤中，用sed命令修改配置文件
   # files 使用本项目中/files文件夹中的所有文件
-  modify_method: 'files'
+  modify_method: 'sed'
 
 on:
   # 定时任务，格式：minute(0 - 59) hour(0 - 23) day_of_the month (1 - 31) month(1 - 12 or JAN-DEC) day of the week (0 - 6 or SUN-SAT)
